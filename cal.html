@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+            <style>
+
+                @keyframes rotate{
+                    0%{
+                        --angle: 0deg;
+                        --glowcolor: var(--color-green);
+                    }
+                    100%{
+                        --angle: 360deg;
+                        --glowcolor: var(--color-green);
+                    }
+                }
+                *{
+                    box-sizing: border-box;
+                }
+            </style>
+
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex gap-1  flex-column shadow-sm p-2 mx-auto Backg">
+                            <h3>Calculator</h3>
+                            <input type="number" placeholder="number 1" class="form-control" id="input1">
+                            <input type="number" placeholder="number 1" class="form-control" id="input2">
+                            <span id="result" class="fw-bold fs-2"></span>
+                            <button class="btn btn-primary" id="add">add</button>
+                            <button class="btn btn-primary" id="Sub">Subtract</button>
+                            <button class="btn btn-primary" id="Mul">Multiply</button>
+                            <button class="btn btn-primary" id="Div">Divide</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </header>
+        <main></main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+            <div class="container">
+                <a class="btn" href="#">
+                    <span class="btnInner">Button</Button></span>
+                </a>
+            </div>
+    </body>
+
+    </html>
+    <script>
+        let input1 = document.querySelector("#input1");
+        let input2 = document.querySelector("#input2");
+
+        let answer = document.querySelector("#result");
+
+        document.querySelector('#add').addEventListener('click', () => {
+            var a = parseInt(input1.value);
+            var b = parseInt(input2.value);
+            answer.innerHTML = a + b;
+        })
+        document.querySelector('#add').addEventListener('click', () => {
+            var a = parseInt(input1.value);
+            var b = parseInt(input2.value);
+            answer.innerHTML = a + b;
+        })
+    </script>
+</body>
+
+</html>

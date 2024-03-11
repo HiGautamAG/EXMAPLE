@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #011111;
+    color:white ;
+    display : flex;
+    align-items: center;
+}
+.nav-logo {
+    height: 50px; 
+    width: 130px;
+}
+
+.logo{
+    background-image:url("https://www.thesun.co.uk/wp-content/uploads/2022/02/Amazon-Logo-1024x426-1.png");
+    height: 50px;
+    width: 100%;
+    background-size:cover ;
+}
+.border-hover{
+    border: 1.5px solid white;
+}
+/*box2*/
+.add-first{
+    color: #cccccccc;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+
+
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/*box3*/
+
+.nav-search{
+    display: flex;
+    background-color: pink;
+    width: 62px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+
+}
+.search-input{
+    width: 10%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: auto;
+
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page demo 1</title>
+    <style>
+        
+        /* reset css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #efefef;
+            color: #066868;
+        }
+
+        section {
+            height: 100vh;
+            /* 100% of the viewport height */
+        }
+
+        #s1 {
+            background-color: rgb(100, 176, 251);
+            display: grid;
+            place-items: center;
+            background-image: url('https://wallpaperaccess.com/full/1483006.jpg');
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        #leftcol {
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        #rightcol 
+        {
+        
+        }
+
+        .logoarea {
+            display: flex;
+            justify-content: center;
+            padding: .5rem;
+        }
+
+        #logo {
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 7rem;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-display: transparent;
+            text-align: center;
+            font-size: 65px;
+            color: #526268;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffdd, 0 0 40px #282c2b, 0 0 70px #00ffdd, 0 0 80px #00ffdd, 0 0 100px #00ffdd, 0 0 150px #00ffdd;
+            animation: neon-animation 1.5s ease-in-out infinite alternate;
+            
+            animation: glow 1s infinite alternate;
+
+        }
+
+        h1>span {
+            font-weight: bold;
+            font-size: 78px;
+           
+            flex-flow: nowrap;
+            color: #526268;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffdd, 0 0 40px #00ffdd, 0 0 70px #00ffdd, 0 0 80px #00ffdd, 0 0 100px #00ffdd, 0 0 150px #00ffdd;
+            animation: neon-animation 1.5s ease-in-out infinite alternate;
+            
+        }
+
+        .btnarea {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: rgb(214, 210, 210);
+            font-weight: 3rem;
+            padding: 1rem 2rem;
+            display: block;
+            width: 200px;
+            text-align: center;
+            border-radius: 2rem;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .services {
+            display: flex;
+            gap: 75px;
+            justify-content: center;
+        }
+
+        .svc_card {
+            background-color: #2d2df6;
+            color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-family: sans-serif;
+        }
+
+        .svc_card>p {
+            font-size: 1.5rem;
+        }
+
+        .svc_card>h3 {
+            font-size: 2rem;
+        }
+
+        .svc_card>.icon {
+            display: block;
+            filter: invert(1);
+        }
+
+        h2{
+            text-align: center;
+        }
+        #s3 {
+            /* display: flex;
+            flex-direction: column; */
+            padding: 80px;
+            background-color: white;
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .photo {
+            display: flex;
+
+            gap: 1rem;
+        }
+
+        .content {
+            justify-content: center;
+            background-color: rgb(180, 176, 176);
+            padding: 5rem;
+        }
+
+        .content>h2 {
+            font-family: sans-serif;
+            font-size: 2.5rem;
+            color: #90bb0e;
+
+        }
+
+        .content>p {
+            font-family: sans-serif;
+            font-size: 1.3rem;
+            padding: 30px 0px;
+            color: gray;
+            
+        }
+
+          .photo1,
+        .photo2 {
+
+            border-radius: 8px;
+        }
+
+        .photo1 {
+            padding-bottom: 3rem;
+        }
+
+        .photo2 {
+            padding-top: 5rem;
+        }
+        .photo1,
+        .photo2 {
+
+            border-radius: 8px;
+        }
+
+        .photo1 {
+            padding-bottom: 3rem;
+        }
+
+        .photo2 {
+            padding-top: 5rem;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="container">
+                <div id="leftcol">
+                    <div class="logoarea">
+                        <img src="https://seeklogo.com/images/W/world-taekwondo-federation-logo-FE76BC1505-seeklogo.com.png" alt="" height="100" width="300">
+                        
+                    </div>
+                    <div>
+                        <h1>
+                            As You Think,<br>
+                            <span>So Shall You Become..</span>
+                        </h1>
+                    </div>
+                    <div class="btnarea">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div id="rightcol">
+                    <img src="https://pngimg.com/uploads/taekwondo/taekwondo_PNG25.png" alt="GOKU" width="750" height="900">
+
+                </div>
+            </div>
+        </section>
+        <div>
+        <section id="s2">
+            <div class="container2">
+                <h2>Our Facilities</h2>
+                <div class="services">
+                    <div class="svc_card">
+                        <img src="https://www.transparentpng.com/thumb/plants/png-clipart-file-plants-12.png" alt="" class="icon" height="100" width="100">
+                        <h3>Rule 1.</h3>
+                        <p>The most dangerous person is the one who thinks and observe</p>
+                    </div>
+                    <div class="svc_card">
+                        <img src="http://surl.li/qomeo" alt="" class="icon" height="100" width="100">
+                        <h3>Dolores, soluta reiciendis.</h3>
+                        <p>Eligendi rerum rem nobis blanditiis fuga eum, illo similique deleniti.</p>
+                    </div>
+                    <div class="svc_card">
+                        <img src="http://surl.li/qomfm" alt="" class="icon" height="100" width="100">
+                        <h3>Eos, omnis minus!</h3>
+                        <p>Corrupti laborum ducimus exercitationem repellendus, omnis inventore et sint vel.</p>
+                       </div>
+                       </div>
+                    </section>
+                 
+                   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="s3">
+            <!-- .container3>.content>((h2>lorem3)+(p>lorem25))+.photo -->
+            <div class="container3">
+                <div class="content">
+                    <h2>Taekwondo</h2>
+                        <b>As a martial art, it is known as a style that focuses particularly on kicking, and experienced
+                            practitioners can be seen performing various spectacular head height and jumping kicks. There are various
+                            Taekwondo administration bodies but the main two are the ITF (International Taekwondo Federation) and the
+                            WTF (World Taekwondo Federation) but it is the latter that is the best known as it the WTF form of Taekwondo
+                            that has been a major part of the Olympic Games since 1988.
+                    </p>
+                </div>
+                <div class="photo">
+                    <div class="photo1">
+                        <img class="img4" src="https://i.pinimg.com/564x/9c/9d/93/9c9d933a8c99620a7ac1523acffc60ea.jpg" alt="" height="400" width="250" />
+                    </div>
+                    <div class="photo2">
+                        <img class="img4" src="https://i.pinimg.com/564x/2d/5c/fb/2d5cfb9b69157d14cc44d541b91e9dc0.jpg" alt="" height="400" width="250" />
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+</body>
+
+</html>
